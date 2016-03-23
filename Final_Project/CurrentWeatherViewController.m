@@ -46,6 +46,11 @@ BOOL isFirstTime;
     isFirstTime = false;
     [self request];
     self.navigationItem.title = @"Weather";
+    
+    if ([[NSUserDefaults standardUserDefaults] objectForKey:@"City"] != nil ||
+        ![[[NSUserDefaults standardUserDefaults] objectForKey:@"City"]  isEqual: @"Hanoi"]) {
+        [[NSUserDefaults standardUserDefaults] setValue:@"Hanoi" forKey:@"City"];
+    }
 }
 
 - (void) viewDidAppear:(BOOL)animated
@@ -100,7 +105,6 @@ BOOL isFirstTime;
                                           
                                       });
                                   }];
-    
 }
 
 @end

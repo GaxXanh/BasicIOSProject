@@ -46,6 +46,7 @@
     NSString *cityName = [[NSUserDefaults standardUserDefaults] objectForKey:@"City"];
     if (cityName != nil) {
         [sOpenWeatherMapAPI weatherForecastForCityName:cityName completionBlock:^(NSArray *forecastList) {
+            
             _listForecast = [[NSMutableArray alloc] init];
             for (NSDictionary *day in forecastList) {
                 

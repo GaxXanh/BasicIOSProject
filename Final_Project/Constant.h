@@ -11,7 +11,7 @@
 
 // Open Weather Map API
 
-#define kOpenWeatherMapAppID                    @"b1b15e88fa797225412429c1c50c122a"
+#define kOpenWeatherMapAppID                    @"58ba6391d42b6ce91ce9aadc874dbe4f"
 #define kOpenWeatherMapExploreCountryName       @"http://api.openweathermap.org/data/2.5/find?q=%@&units=metric&appid=%@"
 #define kOpenWeatherMapExploreForecast          @"http://api.openweathermap.org/data/2.5/forecast/daily?q=%@&units=metric&cnt=%@&appid=%@"
 
